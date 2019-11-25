@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '11.0'
+
+target 'Demo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Demo
+
+#source 'https://github.com/huachen206/MySpecs.git'
+#source 'https://github.com/CocoaPods/Specs.git'
+
+#pod 'GEGIntegrationKit'
+pod 'SQLite.swift'
+pod 'Alamofire'
+pod 'Moya',:inhibit_warnings => true
+pod 'HandyJSON'
+
+  target 'DemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'DemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
